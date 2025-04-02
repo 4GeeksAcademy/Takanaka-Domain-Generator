@@ -22,7 +22,7 @@ function generateDomain() {
     for (let j of adj) {
       for (let x of noun) {
         for (let z of domain) {
-          if (x === z) {
+           if (x.slice(-2) === z) {
             combinations.push(i + j + x.slice(0, 4) + "." + x.slice(4));
             
           } else if (x !== z) {
